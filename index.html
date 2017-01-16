@@ -5,9 +5,9 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/martylogo.pn
 https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/thebar.jpg
 https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile.png
 -->
+<div class="container">
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Rambla" rel="stylesheet">
-
 <div class="title">
 	<img src="https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/martylogo.png"/>
 </div>
@@ -17,17 +17,99 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
 <div class="sitenav">
   <ul>
     <li> <a> HOME </a> </li>
-    <li> <a> ABOUT US </a> </li>
+    <li> <a href="#aboutus"> ABOUT US </a> </li>
     <li> <a> FUNCTIONS </a> </li>
     <li> <a> MENU </a> </li>
     <li> <a> CONTACT US </a> </li>
   </ul>
-<div>
+</div>
 <div class="viewmenu">
   <a> VIEW MENU </a>  
 </div>
+<div id="aboutus" class="group">
+  <div class="left">
+    
+  </div>
+  <div class="right">
+    <h2> Charleston and eiu's favorite place for fun </h2>
+    <h5> Located on the corner of 4th and Grant. Marty's has been a staple of Charleston and for EIU students for decades. Making fun, relationships and nights you won't forget since 1973. </h5>
+    <a> See the menu </a>
+  </div>
+</div>
+  <div id="calltoaction">
+    <h1>Hashtag #MARTYSEUI to show up on our instagram </h1>
+  </div>
+</div>
+
+
 <style>
+  * {
+    box-sizing: border-box;
+  }
+  #calltoaction {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+   
+  }
+  .container {
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url('https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/grayflaketile.png');
+  }
+  #aboutus {
+    width: 1000px;
+  	position: relative;
+    margin: 0 auto;
+  }
+  #aboutus > div {
+    background: gray;
+    float: left;
+    width: 500px;
+    height: 500px;;
+    margin: 0;
+    position: relative;
+  }
+  #aboutus .left {
+    top: 40px;
+    right: -10px;
+    background: pink;
+    z-index: 5;
+  }
+  #aboutus .right {
+    top: -50px;
+    left: -40px;
+    padding: 40px 70px;
+  }
+  #aboutus .right {
+    font-family: sans-serif;
+    color: white;
+  }
+  #aboutus .right h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+  }
+  #aboutus .right h5 {
+    font-weight: 200;
+    font-size: 1.1em;
+  }
+  #aboutus .right a {
+    text-transform: uppercase;
+    background: red;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: all 0.1s;
+  }
+  #aboutus .right a:hover {
+    background: rgb(255,100,100);
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
   .viewmenu {
+    z-index: 5;
     position: absolute;
     top: 30px;
     right: 30px;
@@ -45,7 +127,8 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
     margin: auto;
   }
   .sitenav ul {
-    position: absolute; /* I'm so embarrased! */
+    z-index: 10;
+    position: absolute;
     top: 30vh;
     list-style: none;
   }
@@ -65,7 +148,6 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
   .title {
     height: 220px;
     display: flex;
-    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url('https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/grayflaketile.png');
     background-size: 90px;
   }
   .title img {
@@ -74,5 +156,10 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
   }
   .hero img {
   	width: 100%
+  }
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 </style>
