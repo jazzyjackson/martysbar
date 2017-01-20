@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
 <div class="title">
 	<img src="https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/martylogo.png">
 </div>
-<div class="hero">
+<div id="hero">
   <img src="https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/thebar.jpg">
 </div>
 <div class="sitenav">
@@ -110,6 +110,8 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
       
     </div>
   </div>
+  <iframe id="map" width="100%" height="450" frameborder="0"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ632JD1Adc4gR1QjnBmwGzSM&key=AIzaSyDY9WsLQdv2gqCVHJu4SYnOp3hkO_psoOI" allowfullscreen></iframe>
   <footer>
     <div>
       <div class="functions">
@@ -168,7 +170,6 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
     stroke: white;
     fill: white;
   }
-
   #location {
     padding-top: 120px;
     position: relative;
@@ -237,16 +238,17 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
     width: 90%;
     margin: 0 auto;
     padding: 25px;
+    font-size: 1.2em;
   }
   #function input {
+    font-size: 1.2em;
   	padding: 5px;
     margin: 5px;
     border-radius: 50px;
   }
-  #function input[type="text"] {
-  	width: 60%;
-  }
+
   #function button {
+    font-size: 1.2em;
     border-style: none;
   	background: red;
   	color: white;
@@ -352,7 +354,7 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
     margin: 0;
     position: relative;
   }
-  @media (max-width: 1199px){
+  @media (max-width: 999px){
     #aboutus .left {
       height: 500px;
   	}
@@ -378,9 +380,17 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
       background: linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)), url("https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/cocktails.png");
       background-size: cover;
     }
-   
+    footer > div:first-child {
+      flex-direction: column;
+    }
+    #function form {
+      width: 90%
+    }
+    #function input[type="text"] {
+  	  width: 90%;
+  	}
   }
-  @media (min-width: 1200px){
+  @media (min-width: 1000px){
     #aboutus, #special, #location {
       width: 1000px;
       position: relative;
@@ -404,6 +414,12 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
       top: -30px;
       z-index: 1;
       height: 300px
+  	}
+    #function form {
+      width: 60%
+    }
+    #function input[type="text"] {
+  	  width: 60%;
   	}
   }
   #aboutus .right {
@@ -434,9 +450,9 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
   }
   .viewmenu {
     z-index: 5;
-    position: absolute;
-    top: 30px;
-    right: 30px;
+    position: fixed;
+    top: 100px;
+    right: 100px;
     background: #ea2306;
     color: white;
     width: 80px;
@@ -452,7 +468,7 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
   }
   .sitenav ul {
     z-index: 10;
-    position: absolute;
+    position: fixed;
     top: 30vh;
     list-style: none;
   }
@@ -478,9 +494,15 @@ https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile
     height: 200px;
     margin: auto;
   }
-  .hero img {
+  #hero {
+  	max-height: 650px;
+    overflow: hidden;
+  }
+  
+  #hero img {
   	width: 100%
   }
+  
   .group:after {
     content: "";
     display: table;
