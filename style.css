@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 body {
-  background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url('https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/grayflaketile.png');
+  background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAE4wAABOMB/KBTaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKFSURBVHic7dw/a1RBFAXwc+fNI5vdlc0WNiHFsgQjAW0UJZWFCFoEFnEQg2uRIkUqP0KqWPkFFmxC3GZQTKtgI9inyEoUxUIjuiKCWVfem52xtbBJ/PPy3p7fJzhw5840hxEAMMZUS6VSA8BZEXm6sbHxDoAH/XfKGDMZx/E8gDaA20qppjFGZx1sXKk4jufjOL4lIm0R6Tjndq21SdbBxpXSWs9473+EEO4C2CqXy5+zDjXOtPd+R2v9MUmST91u9wP4dhARERERERERERERERERERWVGGMmAaisgxyGZB3gb1peXj7mnJsFsOCce5Km6Rtr7SjrXAdRmEJcu92uJElyCsA1ETkvIrv1ev0tgFwNJJdr/TsickJEriulbojI/YmJiRedTifNOtdBFWZDvPfTIpICWB8Ohw/7/X4uC3+FGUgIYVtr/X4wGHyx1vaRs6uKiIiIiIiIiIiIiIiIiIiONFlcXCyjQE2UPBIAaLVaU9VqdV5ELiRJ8sB7/zpvBbOiUMaYWqVSOaOUuhlCuKy1Pl6v17klGVGlUumkiFwFcBHAPaXUqzwWzIpChxBmAAxCCHdCCI82Nzf3sw41zjSA56PRaMc599Va+w1AyDoUERERERERERERERERERHRERBlHeAfkJWVlXKz2fS9Xi93/YBC/SjXarWmarXaae/9JeecnZub662trbmscx1EYb5nWlpaqkdRdA6AATATRdHjvb293B24wjQURWRWRK4AWAghdEej0cs8Fv4KsyFRFE0DSNM0XU/TdMtaO8g602EUZiDD4fBZFEXbIrJvrf0OFv6IiIiIiIiIiIiIiIiIiOjP/FqUk9XV1Wqj0RjlsWBWFD8BjTrMENc6VGYAAAAASUVORK5CYII=');
 }
 #social {
   display: flex;
@@ -47,7 +47,7 @@ body {
 }
 #location .right {
   width: 800px;
-  background: url("https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/cocktails.png");
+  background: url("./img/cocktails.png");
   background-size: cover;
 }
 @media (min-width: 1000px){
@@ -84,7 +84,7 @@ padding-top: 50px;
 #function {
   padding-bottom: 50px;
   margin-top: 20px;
-  background: url("https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/redflaketile.png"),linear-gradient(#1a1a1a,#1a1a1a);
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAE4wAABOMB/KBTaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJNSURBVHic7dxNSxVhHIbx6//MHGyO71YbkXAhEUoiHKMOBQUR1bagiNLP0spWfYGgZW2iyGUE0SICk7NocYyKIrCsNNQwK52Xp0XbWijSNHPu3ye4hmeG2dw8BrA4QkfUzWAC497xqPcJ7w0y5J8L5+tEbTCcwvkAThu8mxvhE002845rRa4zYxjHpDMmDG64H7wc0WHkxvmAAe/5ief6hme6Cl/yjmplYexptjk+Z5ss7p7lo/4dIiIiIiIiIiIiIiIiIiIi5eTB5utEHlzeLdtheQfspKWjdFYzhhKjTsrDrhneGqR5d21FId+iP/GjtLuMgwlMGFz2jn3Uivd8hQv+m+/t7A+NizguGdyqOF5Ygzjvrq0K8w7YKYnR7yE2z5TF3KvOFnPwV54DSXneFvBhc4PlBw2WLhTs3yEiIiIiIiIiIiIiIiIiIv8vD7ZQo1rUgVlZGMDKGD1BxHDmOO5i7nY+403RBmZl4ZZrdFciat644jxnEsfeRgEHZmXhdlU4kBrnME56z82K4/V4AQdmZRGmjgFvrDvPtTjjft8M3/KOamWhC3jqE5ouYbVvljUDn3eUiIiIiIiIiIiIiIiIiIiI7DwP5n8P/oK8W7ajVDfKrYzRE1YZzeBUkHKnPWLOHpPk3bUVpRnErR6j10Uc9sYkcCgL6W6sFe+FK82BWMYQxlmgjue2S3hVxMFfaS4wM+jPjJiUqa41pmmynndTS/tap2/lCIMLNfZcLdGXLyIiIiIiIiIiIiIiIiIi+fNgiyfoKOrArCx+ATblnpQGph5CAAAAAElFTkSuQmCC'), linear-gradient(#1a1a1a,#1a1a1a);
 }
 #function h1 {
   color: white;
@@ -130,7 +130,7 @@ padding-top: 50px;
   font-size: 1.3em;
 }
 #special .right {
-  background-image: url("https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/fisbowl.png");
+  background-image: url("./img/fishbowl.png");
   background-size: cover;
 }
 
@@ -225,14 +225,14 @@ position: relative;
     display: none;
   }
   #special .left {
-    background: linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)), url("https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/fisbowl.png");
+    background: linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)), url("./img/fishbowl.png");
     background-size: cover;
   }
   #location .right {
     display: none;
   }
   #location .left {
-    background: linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)), url("https://raw.githubusercontent.com/jazzyjackson/martysbar/master/img/cocktails.png");
+    background: linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)), url("./img/cocktails.png");
     background-size: cover;
   }
   footer > div:first-child {
@@ -408,7 +408,7 @@ footer h4 {
 #theMenu #title div:first-child {
   color: black;
   border-right: 1px solid #ea2306;
-  width: 160px;
+  width: 166px;
   text-align: left;
 }
 #theMenu h3 {
